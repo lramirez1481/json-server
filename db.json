@@ -7,3 +7,9 @@
   ],
   "profile": { "name": "typicode" }
 }
+
+module.exports = () => {
+    return jsf.resolve(schema).then((response) => {
+        return JSON.stringify(response);
+    })
+};
